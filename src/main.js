@@ -1,8 +1,8 @@
-//how to read a file using NodeJS?
-//this is a internal module
-import { readFileSync, writeFileSync } from "node:fs";
+console.log("Hello 1");
+console.log("Hello 2");
 
-let filePath = "D:/Practice/WPT/DAY9/output.txt";
-let data= "hello world";
-writeFileSync(filePath, data);
-console.log("Write success!!");
+setTimeout(() => console.log("Hello 3"),1000);
+
+
+console.log("Hello 4");
+console.log("Hello 5");
