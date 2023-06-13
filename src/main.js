@@ -1,8 +1,7 @@
 //blocking or nonblocking?
-async function hello() {
-    console.log("hello 2");
+async function sum(n1,n2) {
+    return n1+n2;
 }
 
-console.log("Hello 1");
-hello();
-console.log("HEllo 3");
+let result=sum(10,20);
+console.log(result);
