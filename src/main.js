@@ -1,9 +1,9 @@
-import {readFile} from "node:fs/promises";
+import {writeFile} from "node:fs/promises";
 
 async function main(){
-    let filePath = "D:/Practice/WPT/DAY9/package.json";
-    let fileData = await readFile(filePath, {encoding: "utf-8"});
-    console.log(fileData);
+    let filePath = "D:/Practice/WPT/DAY9/output1.txt";
+    let fileData = "hello everyone good morning";
+    await writeFile(filePath, fileData);
 }
 
 main();
